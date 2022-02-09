@@ -13,9 +13,9 @@ bot.get_updates(fail_silently: true) do |message|
     when /start/i
       reply.text = "all i do is say what'sup bitch. try /greet hoe"
     when /greet/i
-      reply.text = "Hello, #{message.from.first_name}.
+      reply.text = "Hello, #{message.from.first_name}."
     else
-      reply.text = "ionno no #{command.inspect} mufuka. try that shit again."
+      reply.text = "ionno kno #{command.inspect} mufuka, try that shit again"
     end
     puts "sending #{reply.text.inspect} to @#{message.from.username}"
     reply.send_with(bot)
